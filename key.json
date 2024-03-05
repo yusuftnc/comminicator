@@ -1,0 +1,13 @@
+{
+  "type": "service_account",
+  "project_id": "bulutalarm",
+  "private_key_id": "27c6ed52c9c57e2ccef7beb3f364da3f17dd8b00",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQCtRYQLNX9cTGv4\nyz1p7PMOj2tTfGCTpW0ja0aiMZJQyTVnfO5Afjm2VDvEEKPVQfrGmdV5Gv/FhhTw\n6BWXrYGzrsqJy/v54Zymwb3O9RNLS4D+AdWImRtu6hQQc3npxPKTHW/J7WDG4vaP\nTTLCgWEVSEVUoaxGRzd6a7PEAG/sfjCxrrvXNUAeL0pZy0Y9AFkvKwZ5ux78jj/M\nVjHv5tDv2pHgWlyUwM+WSGiSpcyYsBz+e65Pc6+LZhog5e/Nplr2njhgMtx9z1Vh\nGU/AjWVmtzhiQjzR0hGgWNHjhrHyJK2eyDxYrb0lAjR6/H8YR27ij1X54VnxDzOx\ncADMbzS7AgMBAAECggEACTF6oHJsMxd5VK/9e2GvdU+CueE/HO/wBHffcLrOMPi1\nm3hzcHr1N1Yf/ansWpcV/4318TQ163ybuKFEhzgVFtWCHyGL8v9XcmzHh1pVdbwO\nntHpSuAX81PHUMAi8Py0HVe4fXw/+dpDWE/kqF4SkP1OpswVLRb/1VnIv4nn/+7z\np+MraWxFf5ERJy5k2p0Rbez7q0o8jUeOLmuoIk1E4g5ZUg8ZaIF5O9AZ3EtQHnv/\nQ7d+DavuPDp0+BwWXrOVLNau7S5wBdui476f8EM2grY6MavPhN4RywXg76g/iwbb\n8lRi2Du6IITCj+CCudxbroGr/srAnZnj5gXcHZ4iQQKBgQDlJAcwHsvY281FrQej\nQMUN/pcELk/Hi+mbUH0403cR8y0DGpZZaVyEBhpoALJDCv2g6M3dF4keYnvIuhte\n/c+Yh0Al4QP1V7eKPzxBSmw9YMWp6OZEzZm7CL4vjrd+H5CCZoDBmuAAu5eNC+Th\nnCExL6p3Lfmw5XjHjny49jgCUQKBgQDBlPxDYSX0zZN4ETBrKgfQUHhx8e5Ii4Ws\nJGzp1IHULlslfeigku2qFoulA3ql9Q34w2bVKtAKVKes1A679Jg/l3U8h8y4Pof/\nerAceQTjJchR9sCvX/RZz2AInMEgNDs/5NNkuhSX2PaEG2/jZiFMPelPQektKCUy\nzkXYaS1XSwKBgQCxPoso18mKt4szKELOLx2+U35xR3mCu2E6OKqEOF7UTaw1yG0g\nQHXF0gq/BDrfzTKfMzV6nef8zuU9QWhGtEHOlGA0bLfpIa7hi0SKpIzRdXewlGz6\nL6eIm5yxoM2jC7t2gt954tj++Bykh9zF/0VVjK9pfPC1uusQQdGMKTjt4QKBgQCh\ndyuS6A1Iy9Adbfj86enqj7RnFmyyhe3RT/CoeWBxItlTxFms1eD25idEVEqQ8n3c\n6N91Hmi4tTPGrHo9vB7hq+tVuc/APighqKwMk8TH0lPsSe0eWuLtplNr25Qa0HY7\nLRpGAg/7ODUmq9v/yMgtV9arDUb5K2sbnYIUqGXxUQKBgQCMjSPZTufQyUjEN4Nv\nOBBZ3yeC/p76nlm0gfLiadgnpWNDerG03x8fq/C+Gd9PNS4YWMrAM5uxmrwiebsL\nhK+TjpTLIEQaCAf3Gxi3zm4fKBrSEAs+YMDvdiXZcln+fR1jelhZiEI5z5xUvOuz\nOYDirULNo5Yjmh4vVnwMqsVg8w==\n-----END PRIVATE KEY-----\n",
+  "client_email": "dev-admin@bulutalarm.iam.gserviceaccount.com",
+  "client_id": "101252751980912978968",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/dev-admin%40bulutalarm.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}

@@ -1,0 +1,77 @@
+package main
+
+import (
+	"agent/protocol"
+	"log"
+	"net"
+	"strings"
+	"time"
+)
+
+// Function to start TCP server
+func startTCPServer() {
+	for {
+		ln, err := net.Listen("tcp", ":7002")
+		if err != nil {
+			log.Printf("Error starting TCP server: %v", err)
+			time.Sleep(time.Second) // Wait a second before retrying
+			continue
+		}
+
+		// If we've successfully started listening, proceed with accepting connections
+		for {
+			conn, err := ln.Accept()
+			if err != nil {
+				log.Printf("Error accepting connection: %v", err)
+				break
+			}
+
+			go handleConnection(conn) // Use a goroutine for each connection
+		}
+
+		_ = ln.Close()          // Attempt to close the listener
+		time.Sleep(time.Second) // Wait a second before trying to listen again
+	}
+}
+
+// Function to handle each connection
+func handleConnection(conn net.Conn) {
+	defer conn.Close()
+
+	buf := make([]byte, 32)
+	_, err := conn.Read(buf)
+
+	if err != nil {
+		log.Printf("Error reading from connection: %v", err)
+		return
+	}
+
+	message := string(buf)
+
+	if strings.Contains(message, "xml") {
+		ack, err := protocol.ProcessEBSXML(message)
+		if err != nil {
+			log.Printf("Error processing EBS XML: %v", err)
+			return
+		}
+		conn.Write([]byte(ack))
+	} else if strings.Contains(message, "[") && strings.Contains(message, "]") {
+		ack, err := protocol.ProcessSIA(message)
+		if err != nil {
+			log.Printf("Error processing SIA: %v", err)
+			return
+		}
+		conn.Write([]byte(ack))
+	} else {
+		ack, err := protocol.ProcessContactID(message)
+		if err != nil {
+			log.Printf("Error processing Contact ID: %v", err)
+			return
+		}
+		conn.Write([]byte(ack))
+	}
+}
+
+func main() {
+	startTCPServer()
+}

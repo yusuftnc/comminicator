@@ -1,0 +1,40 @@
+monitoringCenter:
+  name: Development
+  serial: 1
+
+listenServices:
+  - name: Surguard
+    id: 1
+    port: 6666
+    type: SURGUARD
+    endChar: 0x14
+
+  - name: Dc09
+    id: 2
+    port: 7777
+    type: DC09
+    endChar: 0x0A
+
+  - name: Ademco
+    id: 3
+    port: 8888
+    type: ADEMCO
+    endChar: 0x0A
+
+  - name: Teknim
+    id: 4
+    port: 9999
+    type: TEKNIM
+    endChar: 0x0A
+
+  - name: Fonri
+    id: 5
+    port: 4444
+    type: FONRI
+    endChar: 0x0A
+
+  - name: Ebs
+    id: 6
+    port: 7002
+    type: SURGUARD
+    endChar: 0x14
